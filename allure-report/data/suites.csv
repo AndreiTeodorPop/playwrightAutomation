@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","889","Test2","chromium","Fri Nov 08 16:13:50 EET 2024","passed","Fri Nov 08 16:13:51 EET 2024","","Reporters.spec.js","",""
+"","366","Test3","chromium","Fri Nov 08 16:13:51 EET 2024","passed","Fri Nov 08 16:13:51 EET 2024","","Reporters.spec.js","",""
+"","3821","Test1","chromium","Fri Nov 08 16:13:46 EET 2024","passed","Fri Nov 08 16:13:50 EET 2024","","Reporters.spec.js","",""

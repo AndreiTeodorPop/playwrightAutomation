@@ -1,0 +1,69 @@
+# Install playwright
+npm init playwright@latest
+
+# Install TypeScript
+npm install typescript --save-dev
+
+# Initialize TypeScript
+npx tsc --init
+
+# Check playwright version
+npm playwright -v
+
+# Install Ortoni Report
+npm install -d ortoni-report
+
+
+# Run tests
+  npx playwright test HomePageTest.spec.js --headed --project=chromium --debug
+  npx playwright test Locators_builtin.spec.js --headed --project=chromium --debug
+    Runs only one test file with multiple options
+
+  npx playwright test
+    Runs the end-to-end tests.
+
+  npx playwright test --headed
+    Runs the test with browser opened
+
+  npx playwright show-report
+    To open last HTML report run
+
+  npx playwright test --ui
+    Starts the interactive UI mode.
+
+  npx playwright test --project=chromium
+    Runs the tests only on Desktop Chrome.
+
+  npx playwright test example
+    Runs the tests in a specific file.
+
+  npx playwright test --debug
+    Runs the tests in debug mode.
+
+  npx playwright codegen
+    Auto generate tests with Codegen.
+
+  npx playwright show-trace test-results/Tracing-test-chromium/trace.zip
+    Open trace.zip file
+
+  npx playwright test Tags.spec.js --headed --project=chromium --grep sanity
+  npx playwright test Tags.spec.js --headed --project=chromium --grep @sanity@regression
+  npx playwright test Tags.spec.js --headed --project=chromium --grep-invert @sanity@regression     // excludes the test with annotation
+    Runs the test with the '@sanity' annotation
+
+  npx playwright test Reporters.spec.js --project chromium --reporter list
+  npx playwright test Reporters.spec.js --project chromium --reporter line
+  npx playwright test Reporters.spec.js --project chromium --reporter dot
+  npx playwright test Reporters.spec.js --project chromium --reporter html
+  npx playwright test Reporters.spec.js --project chromium --reporter json          // the report will be generated in terminal
+  npx playwright test Reporters.spec.js --project chromium --reporter junit          // the report will be generated in terminal
+    Generate reporter equal to list, line, dot, html, json, junit
+
+We suggest that you begin by typing:
+
+    npx playwright test
+
+And check out the following files:
+  - .\tests\example.spec.js - Example end-to-end test
+  - .\tests-examples\demo-todo-app.spec.js - Demo Todo App end-to-end tests
+  - .\playwright.config.js - Playwright Test configuration

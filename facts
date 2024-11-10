@@ -1,0 +1,22 @@
+# Locator, use id as CSS - #loginusername
+
+# JavaScript asynchronized language programming
+
+# Semicolon (;) is optional
+
+# By default, PlayWright runs all test in headless mode
+
+# async makes the function to return a promise
+
+# await makes the function to wait for a promise
+
+() => {} - Callback function
+
+ex:
+const {test, expect} = require('@playwright/test');
+
+test('Home Page', async ({page})=> {
+    await page.goto('https://demoblaze.com/index.html');
+})
+
+await page.goto will wait until async ({page}) is loaded(the promise)
